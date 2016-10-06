@@ -1,0 +1,27 @@
+{
+  "name": "pogg",
+  "version": "1.0.0",
+  "description": "A logger made to make developing quicker by making simple what should be.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marshallvaughn/pogg.git"
+  },
+  "keywords": [
+    "logger",
+    "logg",
+    "log",
+    "pog",
+    "pogg",
+    "crumblejoof"
+  ],
+  "author": "Marshall Vaughn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marshallvaughn/pogg/issues"
+  },
+  "homepage": "https://github.com/marshallvaughn/pogg#readme"
+}
