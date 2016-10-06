@@ -1,4 +1,5 @@
-var logg = require("./index");
+var pogg = require("./index");
+pogg.globalize();
 
 var msg = "test";
 var obj = {

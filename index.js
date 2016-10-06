@@ -26,29 +26,32 @@ var color = {
   magenta: msg => clc.magenta(extract(msg))
 }
 
-// plain old logging
-module.exports = msg => logg(extract(msg));
+var logg = function (msg) {
+  lg(extract(msg));
+}
 
 // colorized logging
-module.exports.red = msg => logg(color.red(msg)); // ............. red
-module.exports.blue = msg => logg(color.blue(msg)); // ........... blue
-module.exports.green = msg => logg(color.green(msg)); // ......... green
-module.exports.yellow = msg => logg(color.yellow(msg)); // ....... yellow
-module.exports.magenta = msg => logg(color.magenta(msg)); // ..... purple
+logg.red = msg => lg(color.red(msg)); // ............. red
+logg.blue = msg => lg(color.blue(msg)); // ........... blue
+logg.green = msg => lg(color.green(msg)); // ......... green
+logg.yellow = msg => lg(color.yellow(msg)); // ....... yellow
+logg.magenta = msg => lg(color.magenta(msg)); // ..... purple
 
 // functional logging
-module.exports.doing = msg => logg('[ ] ' + extract(msg), 'yellow'); // to show that something is going to be done.
-module.exports.done = msg => logg('[✓] ' + extract(msg), 'green'); // . to show that something is now done.
+logg.doing = msg => logg(color.yellow('[ ] ' + extract(msg))); // to show that something is going to be done.
+logg.done = msg => logg(color.green('[✓] ' + extract(msg))); // . to show that something is now done.
 
-module.exports.big = msg => gigantize(msg);
+logg.big = msg => gigantize(msg);
 
 // globalize things if you wanna get really brazen. don't tell crockford.
-module.exports.globalize = () => {
+logg.globalize = () => {
   GLOBAL.logg = logg;
 }
 
+module.exports = logg
+
 // this [ v ] makes that [ ^ ] work
-function logg(msg, color) {
+function lg(msg, color) {
   console.log(msg);
 }
 
