@@ -1,10 +1,10 @@
 {
   "name": "pogg",
   "version": "1.0.0",
-  "description": "A logger made to make developing quicker by making simple what should be.",
+  "description": "A logger made to make developing quicker by making simple that which should be.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test.js"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,9 @@
   "bugs": {
     "url": "https://github.com/marshallvaughn/pogg/issues"
   },
-  "homepage": "https://github.com/marshallvaughn/pogg#readme"
+  "homepage": "https://github.com/marshallvaughn/pogg#readme",
+  "dependencies": {
+    "cli-color": "^1.1.0",
+    "json-stringify-safe": "^5.0.1"
+  }
 }
