@@ -26,6 +26,7 @@
   "homepage": "https://github.com/marshallvaughn/pogg#readme",
   "dependencies": {
     "cli-color": "^1.1.0",
+    "figlet": "^1.2.0",
     "json-stringify-safe": "^5.0.1"
   }
 }

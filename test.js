@@ -1,6 +1,6 @@
 var logg = require("./index");
 
-var msg = "I'm sorry, Dave. I can't do that right now.";
+var msg = "test";
 var obj = {
 	tisket: 'tasket'
 }
@@ -22,5 +22,7 @@ for (var i = 0; i < arr.length; i++) {
 
 	logg.doing(arr[i]);
 	logg.done(arr[i]);
-	
+
+	logg.big(arr[i]);
+
 }
