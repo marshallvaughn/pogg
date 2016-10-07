@@ -18,7 +18,7 @@ Then require it:
 ```javascript
 var pogg = require('pogg')
 ```
-Or if you want to get global with it (don't tell Crockford).
+Or if you want to get global with it (don't tell [Crockford](http://javascript.crockford.com/code.html#variable%20declarations)).
 ```javascript
 var pogg = require('pogg').globalize();
 ```
