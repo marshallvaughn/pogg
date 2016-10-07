@@ -11,8 +11,14 @@ Now. Right now.
 
 ## Setup
 Install it:
-` npm install pogg --save
+```javascript
+npm install pogg --save
+```
 Then require it:
-` var pogg = require('pogg')
+```javascript
+var pogg = require('pogg')
+```
 Or if you want to get global with it (don't tell Crockford).
-` var pogg = require('pogg').globalize();
+```javascript
+var pogg = require('pogg').globalize();
+```
