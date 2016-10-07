@@ -25,5 +25,10 @@ for (var i = 0; i < arr.length; i++) {
 	logg.done(arr[i]);
 
 	logg.big(arr[i]);
+	logg.big.red(arr[i]);
+	logg.big.blue(arr[i]);
+	logg.big.green(arr[i]);
+	logg.big.yellow(arr[i]);
+	logg.big.magenta(arr[i]);
 
 }

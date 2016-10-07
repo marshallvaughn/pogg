@@ -2,18 +2,27 @@ var clc = require('cli-color'); // .................................... i use cl
 var stringify = require('json-stringify-safe'); // .................... to simplify json object logging
 var figlet = require('figlet');
 
-function gigantize(msg) {
+function gigantize(msg, clr) {
   if (typeof msg === 'object') {
     console.log(clc.red('Err: cannot large print JSON objects'));
     return null;
   } else {
-    figlet(msg, function (err, data) {
+    figlet.text(msg.toUpperCase(), {
+      font: 'isometric1',
+      horizontalLayout: 'default',
+      verticalLayout: 'default'
+    }, function (err, data) {
       if (err) {
         console.log('Something went wrong...');
         console.dir(err);
         return;
       }
-      console.log(data)
+      if (!clr) {
+        console.log(data)
+      } else {
+        var colorFunc = color[clr];
+        console.log(colorFunc(data));
+      }
     });
   }
 }
@@ -42,6 +51,11 @@ logg.doing = msg => logg(color.yellow('[ ] ' + extract(msg))); // to show that s
 logg.done = msg => logg(color.green('[✓] ' + extract(msg))); // . to show that something is now done.
 
 logg.big = msg => gigantize(msg);
+logg.big.red = msg => gigantize(msg, 'red');
+logg.big.blue = msg => gigantize(msg, 'blue');
+logg.big.green = msg => gigantize(msg, 'green');
+logg.big.yellow = msg => gigantize(msg, 'yellow');
+logg.big.magenta = msg => gigantize(msg, 'magenta');
 
 // globalize things if you wanna get really brazen. don't tell crockford.
 logg.globalize = () => {
