@@ -8,3 +8,11 @@ By utilizing two handy little packages, [cli-color](https://github.com/medikoo/c
 
 ## When?
 Now. Right now.
+
+## Setup
+Install it:
+` npm install pogg --save
+Then require it:
+` var pogg = require('pogg')
+Or if you want to get global with it (don't tell Crockford).
+` var pogg = require('pogg').globalize();
