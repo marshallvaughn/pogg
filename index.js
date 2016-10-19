@@ -8,7 +8,7 @@ function gigantize(msg, clr) {
     return null;
   } else {
     figlet.text(msg.toUpperCase(), {
-      font: 'isometric1',
+      font: 'Isometric1',
       horizontalLayout: 'default',
       verticalLayout: 'default'
     }, function (err, data) {

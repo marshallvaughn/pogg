@@ -1,6 +1,6 @@
 {
   "name": "pogg",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A logger made to make developing quicker by making simple that which should be.",
   "main": "index.js",
   "scripts": {
