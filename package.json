@@ -1,6 +1,6 @@
 {
   "name": "pogg",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A logger made to make developing quicker by making simple that which should be.",
   "main": "index.js",
   "scripts": {
@@ -25,8 +25,8 @@
   },
   "homepage": "https://github.com/marshallvaughn/pogg#readme",
   "dependencies": {
-    "cli-color": "^1.1.0",
-    "figlet": "^1.2.0",
-    "json-stringify-safe": "^5.0.1"
+    "cli-color": "1.1.0",
+    "figlet": "1.2.0",
+    "json-stringify-safe": "5.0.1"
   }
 }
