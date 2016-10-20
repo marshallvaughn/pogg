@@ -1,14 +1,14 @@
 {
   "name": "pogg",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A logger made to make developing quicker by making simple that which should be.",
   "main": "index.js",
   "scripts": {
     "test": "node test.js"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/marshallvaughn/pogg.git"
+    "url": "git+https://github.com/marshallvaughn/pogg.git",
+    "type": "git"
   },
   "keywords": [
     "logger",
